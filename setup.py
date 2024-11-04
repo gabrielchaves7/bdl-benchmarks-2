@@ -37,7 +37,7 @@ setup(
     packages=find_packages(),
     install_requires=[
         "numpy==1.22.0",
-        "scipy==1.4.1",
+        "scipy==1.7.2",
         "pandas==1.0.4",
         "matplotlib==3.2.1",
         "seaborn==0.10.1",
