@@ -44,7 +44,7 @@ setup(
         "scikit-learn",
         "kaggle",
         "opencv-python",
-        "tensorflow-gpu",
+        "tensorflow",
         "tensorflow-probability",
         "tensorflow-datasets",
     ],
