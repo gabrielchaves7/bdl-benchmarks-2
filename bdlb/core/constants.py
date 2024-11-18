@@ -28,7 +28,7 @@ BDLB_ROOT_DIR: str = os.path.abspath(
 DATA_DIR: str = os.path.join(BDLB_ROOT_DIR, "data")
 
 # URL to hosted datasets
-DIABETIC_RETINOPATHY_DIAGNOSIS_URL_MEDIUM = "https://drive.google.com/uc?id=1WAvS-pQsVLxUJiClmKLnVNQkoKmRt2I_"
+DIABETIC_RETINOPATHY_DIAGNOSIS_URL_MEDIUM = "https://drive.google.com/file/d/1VqboxooVTmuLAKtIkHff2E3wT6QzUw0Z/view"
 
 # URL to hosted assets
 LEADERBOARD_DIR_URL: str = "https://drive.google.com/uc?id=1LQeAfqMQa4lot09qAuzWa3t6attmCeG-"
