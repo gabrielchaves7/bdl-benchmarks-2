@@ -84,32 +84,6 @@ class DiabeticRetinopathyDiagnosis(tfds.image.DiabeticRetinopathyDetection):
       ),
   ]
 
-  def _info(self) -> tfds.core.DatasetInfo:
-    return tfds.core.DatasetInfo(
-        builder=self,
-        description="A large set of high-resolution retina images taken under "
-        "a variety of imaging conditions. "
-        "Ehanced contrast and resized to {}x{}.".format(
-            self.builder_config.target_height,
-            self.builder_config.target_width),
-        features=tfds.features.FeaturesDict({
-            "name":
-                tfds.features.Text(),  # patient ID + eye. eg: "4_left".
-            "image":
-                tfds.features.Image(shape=(
-                    self.builder_config.target_height,
-                    self.builder_config.target_width,
-                    3,
-                )),
-            # 0: (no DR)
-            # 1: (with DR)
-            "label":
-                tfds.features.ClassLabel(num_classes=2),
-        }),
-        urls=["https://www.kaggle.com/c/diabetic-retinopathy-detection/data"],
-        citation="",
-    )
-
   def _generate_examples(self, images_dir_path, csv_path=None, csv_usage=None):
     """Yields Example instances from given CSV. Applies contrast enhancement as
     in https://github.com/btgraham/SparseConvNet/tree/kaggle_Diabetic_Retinopat
