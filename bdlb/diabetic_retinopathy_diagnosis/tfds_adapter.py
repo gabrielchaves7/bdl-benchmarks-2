@@ -107,7 +107,7 @@ class DiabeticRetinopathyDiagnosis(tfds.image.DiabeticRetinopathyDetection):
                 tfds.features.ClassLabel(num_classes=2),
         }),
         urls=["https://www.kaggle.com/c/diabetic-retinopathy-detection/data"],
-        citation=tfds.image.diabetic_retinopathy_detection._CITATION,
+        citation="",
     )
 
   def _generate_examples(self, images_dir_path, csv_path=None, csv_usage=None):
